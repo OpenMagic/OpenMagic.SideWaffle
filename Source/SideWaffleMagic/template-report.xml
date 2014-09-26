@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates />
+  <ProjectTemplates>
+    <ProjectTemplate Path="..\ClassLibraryMagic\_Definitions\_project.vstemplate.xml" Name="Class Library Magic" Description="Class library with .NET 4.5.1, NullGuard.Fody and EmptyStringGuard.Fody" ProjectType="CSharp" ProjectSubType="" />
+    <ProjectTemplate Path="..\PortableClassLibraryMagic\_Definitions\_project.vstemplate.xml" Name="Portable Class Library Magic" Description="Portable Class library with NullGuard.Fody and EmptyStringGuard.Fody" ProjectType="CSharp" ProjectSubType="" />
+  </ProjectTemplates>
+  <Snippets />
+</TemplateReport>
