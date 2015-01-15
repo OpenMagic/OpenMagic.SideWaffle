@@ -41,12 +41,24 @@
     <Compile Include="Properties\CommonAssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FodyWeavers.xml" />
+    <Content Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Anotar.CommonLogging">
+      <HintPath>..\..\packages\Anotar.CommonLogging.Fody.2.14.0-CI00005\Lib\Anotar.CommonLogging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\..\packages\Common.Logging.Core.3.0.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Portable">
+      <HintPath>..\..\packages\Common.Logging.Portable.3.0.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Portable.dll</HintPath>
+    </Reference>
     <Reference Include="EmptyStringGuard">
       <HintPath>..\..\packages\EmptyStringGuard.Fody.1.0.6.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\EmptyStringGuard.dll</HintPath>
       <Private>False</Private>
