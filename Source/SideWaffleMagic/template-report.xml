@@ -4,6 +4,7 @@
   <ProjectTemplates>
     <ProjectTemplate Path="..\ClassLibraryMagic\_Definitions\_project.vstemplate.xml" Name="Class Library Magic" Description="Class library with .NET 4.5.1, NullGuard.Fody and EmptyStringGuard.Fody" ProjectType="CSharp" ProjectSubType="" />
     <ProjectTemplate Path="..\PortableClassLibraryMagic\_Definitions\_project.vstemplate.xml" Name="Portable Class Library Magic" Description="Portable Class library with NullGuard.Fody and EmptyStringGuard.Fody" ProjectType="CSharp" ProjectSubType="" />
+    <ProjectTemplate Path="..\TestLibraryMagic\_Definitions\_project.vstemplate.xml" Name="Tests Library Magic" Description="Test library with .NET 4.5.1, SpecFlow.xUnit, FluentAssertions and logging" ProjectType="CSharp" ProjectSubType="" />
   </ProjectTemplates>
   <Snippets />
 </TemplateReport>

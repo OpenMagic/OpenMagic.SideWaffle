@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80C44765-F943-4CEE-8B2F-0079F2571B99}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableClassLibraryMagic", "Source\PortableClassLibraryMagic\PortableClassLibraryMagic.csproj", "{0553BB13-AAE6-49F0-96BF-377292E5EC8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryMagic", "Source\ClassLibraryMagic\ClassLibraryMagic.csproj", "{1C1BA410-8B93-4728-94DA-E37062E11970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibraryMagic", "Source\TestLibraryMagic\TestLibraryMagic.csproj", "{DBE50CF2-BD02-47AB-92C1-C151F0C78283}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{38CACA6E-9DB3-49E8-8322-FF149C091261}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +37,8 @@ Global
 		{0553BB13-AAE6-49F0-96BF-377292E5EC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C1BA410-8B93-4728-94DA-E37062E11970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C1BA410-8B93-4728-94DA-E37062E11970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE50CF2-BD02-47AB-92C1-C151F0C78283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE50CF2-BD02-47AB-92C1-C151F0C78283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -101,6 +101,9 @@
     <TemplateReference Include="PortableClassLibraryMagic.csproj">
       <PathToProject>../PortableClassLibraryMagic/PortableClassLibraryMagic.csproj</PathToProject>
     </TemplateReference>
+    <TemplateReference Include="TestLibraryMagic.csproj">
+      <PathToProject>../TestLibraryMagic/TestLibraryMagic.csproj</PathToProject>
+    </TemplateReference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="TemplateBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
