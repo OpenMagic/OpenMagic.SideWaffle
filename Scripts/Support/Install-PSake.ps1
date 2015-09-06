@@ -10,17 +10,16 @@ try {
 
     .\Validate-Path -Path $NuGetPath -ErrorMessage "Cannot find NuGet executable '$NuGetPath'."
 
-    $psakeVersion = .\Get-PSakeVersion
     $packagesDirectory = "..\..\Packages"
-    $psakeDirectory = "$packagesDirectory\psake.$psakeVersion"
+    $psakeDirectory = "$packagesDirectory\psake"
 
     if (Test-Path $psakeDirectory) {
-        Write-Host "psake $psakeVersion already installed."
+        Write-Host "psake already installed."
         return
     }
 
-    .$NuGetPath install psake -Version $psakeVersion -OutputDirectory ..\..\Packages
-    Write-Verbose "Installed psake $psakeVersion."
+    .$NuGetPath install psake -ExcludeVersion -OutputDirectory ..\..\Packages
+    Write-Verbose "Installed psake."
 }
 finally {
     Pop-Location

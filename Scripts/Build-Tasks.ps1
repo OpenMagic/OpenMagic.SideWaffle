@@ -26,7 +26,7 @@ Task Compile -depends Clean {
     # That's why I'm using .\Scripts\Support\VS2013-Environment-Then-msbuild.bat
     
     # msbuild $solutionFileName /target:rebuild /property:Configuration=$msbuildConfiguration /verbosity:$msbuildVerbosity /nologo
-    Exec { .\Scripts\Support\VS2013-Environment-Then-msbuild.bat $solutionFileName rebuild $msbuildConfiguration $msbuildVerbosity }
+    Exec { .\Scripts\Support\VS2015-Environment-Then-msbuild.bat $solutionFileName rebuild $msbuildConfiguration $msbuildVerbosity }
 }
 
 Task Clean { 
