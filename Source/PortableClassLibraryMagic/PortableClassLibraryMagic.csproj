@@ -15,7 +15,8 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkProfile>Profile44</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <NuGetPackageImportStamp>852f872a</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,6 +47,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="Packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -53,28 +55,30 @@
       <HintPath>..\..\packages\Anotar.CommonLogging.Fody.2.14.0-CI00005\Lib\Anotar.CommonLogging.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Common.Logging.Core">
-      <HintPath>..\..\packages\Common.Logging.Core.3.0.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Core.dll</HintPath>
+    <Reference Include="Common.Logging.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.2.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Common.Logging.Portable">
-      <HintPath>..\..\packages\Common.Logging.Portable.3.0.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Portable.dll</HintPath>
+    <Reference Include="Common.Logging.Portable, Version=3.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Portable.3.2.0\lib\portable-win+net40+sl40+wp7\Common.Logging.Portable.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EmptyStringGuard">
       <HintPath>..\..\packages\EmptyStringGuard.Fody.1.0.6.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\EmptyStringGuard.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NullGuard">
-      <HintPath>..\..\packages\NullGuard.Fody.1.2.0.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="NullGuard, Version=1.4.4.0, Culture=neutral, PublicKeyToken=1958ac8092168428, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NullGuard.Fody.1.4.4\lib\portable-net4+sl5+wpa81+wp8+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <Import Project="..\..\packages\Fody.1.26.4\build\Fody.targets" Condition="Exists('..\..\packages\Fody.1.26.4\build\Fody.targets')" />
+  <Import Project="..\..\packages\Fody.1.29.3\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\..\packages\Fody.1.29.3\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Fody.1.26.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Fody.1.26.4\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Fody.1.29.3\build\portable-net+sl+win+wpa+wp\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Fody.1.29.3\build\portable-net+sl+win+wpa+wp\Fody.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
