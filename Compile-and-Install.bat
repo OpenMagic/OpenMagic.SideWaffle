@@ -1,6 +1,6 @@
 @echo off
 :top
-.\Scripts\Build.ps1
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '%~dp0\Scripts\Build.ps1'"
 
 if exist .\Source\SideWaffleMagic\bin\Release\SideWaffleMagic.vsix (
 
